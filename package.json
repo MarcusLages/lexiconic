@@ -1,5 +1,5 @@
 {
-  "name": "word-game",
+  "name": "lexiconic",
   "version": "1.0.0",
   "description": "Word game that works like dominos, which you can add words to the beginning or to the end of a list",
   "main": "index.js",
