@@ -1,5 +1,12 @@
 const fs = require("fs");
 
+/**
+ * @typedef {Object} Word
+ * @property {string} word - Whole string.
+ * @property {string} head - First letter of the word.
+ * @property {string} rear - Last letter of the word.
+ */
+
 /** Filepath for the file with all the words */
 const FILEPATH = "../resources/my-game-words.txt"
 
@@ -33,8 +40,10 @@ async function getWordsFromFile(filePath) {
 /**
  * Returns an array with all the words used in the game.
  *
- * @return {*} array with all the Word objects.
+ * @return {Array<Word>} array with all the Word objects.
  */
 async function getAllWords() {
     return await getWordsFromFile(FILEPATH);
 }
+
+module.exports = getAllWords;
